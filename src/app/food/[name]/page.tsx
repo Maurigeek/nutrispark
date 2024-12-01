@@ -52,7 +52,7 @@ const FoodPage = ({params} : {params: {name: string}}) => {
         }
 
         initialise();
-    }, [params.name]);
+    }, [params.name, fetchFood]);
 
 
     return (

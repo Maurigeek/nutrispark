@@ -33,7 +33,7 @@ export default function Home() {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState("")
   const [foods, setFoods] = useState<IFoodReduced[]>([])
-  const [isLoading, setIsloading] = useState<Boolean>(true)
+  const [isLoading, setIsloading] = useState<boolean>(true)
 
   const fetchFoods = async () => {
     try {
@@ -67,7 +67,7 @@ export default function Home() {
     if(value.length > 0){
       router.push(`/food/${value}`)
     }
-  }, [value])
+  }, [value, router])
 
   return (
    <>
