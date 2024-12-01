@@ -3,7 +3,7 @@ import { foods } from "@/data";
 // Définir la fonction GET pour la route dynamique
 export async function GET(
   request: Request, 
-  { params }: { params: { name: string } }
+    params: { name: string } 
 ): Promise<Response> {
   // Normalisation du nom
   const normalizeName = (name: string) =>
