@@ -5,9 +5,8 @@ import { useEffect, useState } from "react";
 import { IFood, IMacronutrientData } from "@/types";
 import { useRouter } from "next/navigation";
 import { Undo2 } from "lucide-react";
-import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
-import macro from "styled-jsx/macro";
+import React from 'react';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 
 const FoodPage = ({params} : {params: {name: string}}) => {
